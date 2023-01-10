@@ -1,0 +1,4 @@
+[Gin] {2023-01-03 15:41:16} [31m[ERROR][0m 10.log_level_separation.go:29 [[42mmain.main[0m] Hello
+[Gin] {2023-01-03 15:41:16} [31m[ERROR][0m 10.log_level_separation.go:30 [[42mmain.main[0m] err
+[Gin] {2023-01-03 15:44:26} [31m[ERROR][0m 10.log_level_separation.go:29 [[42mmain.main[0m] Hello
+[Gin] {2023-01-03 15:44:27} [31m[ERROR][0m 10.log_level_separation.go:30 [[42mmain.main[0m] err

@@ -1,0 +1,4 @@
+[Gin] {2023-01-03 15:41:16} [34m[INFO][0m 10.log_level_separation.go:32 [[42mmain.main[0m] info
+[Gin] {2023-01-03 15:41:16} [34m[INFO][0m 10.log_level_separation.go:33 [[42mmain.main[0m] print
+[Gin] {2023-01-03 15:44:27} [34m[INFO][0m 10.log_level_separation.go:32 [[42mmain.main[0m] info
+[Gin] {2023-01-03 15:44:27} [34m[INFO][0m 10.log_level_separation.go:33 [[42mmain.main[0m] print
