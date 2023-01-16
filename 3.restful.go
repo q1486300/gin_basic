@@ -79,7 +79,7 @@ func _bindJson(c *gin.Context, obj any) (err error) {
 	contentType := c.GetHeader("Content-Type")
 	switch contentType {
 	case "application/json":
-		err := json.Unmarshal(body, &obj)
+		err := json.Unmarshal(body, obj)
 		if err != nil {
 			return err
 		}

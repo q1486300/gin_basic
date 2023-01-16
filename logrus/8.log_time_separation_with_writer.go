@@ -107,7 +107,6 @@ func _InitLog(logPath, appName string) {
 	if err != nil {
 		logrus.Error(err)
 		return
-
 	}
 
 	fileWriter := LogFileWriter{file, logPath, fileDate, appName}

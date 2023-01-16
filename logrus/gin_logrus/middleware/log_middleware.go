@@ -27,15 +27,15 @@ func LogMiddleware(c *gin.Context) {
 	endTime := time.Now()
 	latencyTime := endTime.Sub(startTime)
 
-	reqMethod := formatMethod(c.Request.Method)
+	reqMethod := formatMethodWithColor(c.Request.Method)
 
 	reqUri := c.Request.RequestURI
 
-	statusCode := formatStatusCode(c.Writer.Status())
+	statusCode := formatStatusCodeWithColor(c.Writer.Status())
 
 	clientIP := c.ClientIP()
 
-	logrus.WithField("type", "builtin").Infof("[GIN] %s |%s| %13v | %15s | %s \"%s\" ",
+	logrus.WithField("type", "builtin").Infof("[GIN] %s |%s| %13v | %15s | %s \"%s\"",
 		startTime.Format("2006-01-02 - 15:04:05"),
 		statusCode,
 		latencyTime,
@@ -45,7 +45,7 @@ func LogMiddleware(c *gin.Context) {
 	)
 }
 
-func formatMethod(method string) string {
+func formatMethodWithColor(method string) string {
 	methodColor := reset
 
 	switch method {
@@ -68,7 +68,7 @@ func formatMethod(method string) string {
 	return fmt.Sprintf("%s %s    %s", methodColor, method, reset)
 }
 
-func formatStatusCode(statusCode int) string {
+func formatStatusCodeWithColor(statusCode int) string {
 	statusCodeColor := reset
 
 	switch {
